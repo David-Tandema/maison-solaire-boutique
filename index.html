@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5f0">
+    <meta
+      name="description"
+      content="Maison Solaire — une sélection d'objets durables et beaux pour habiter autrement."
+    >
+    <title>Maison Solaire — Objets choisis pour la maison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      Livraison offerte dès 80 € <span aria-hidden="true">·</span> Des objets choisis avec soin
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Maison Solaire, accueil">
+        <span class="brand-symbol" aria-hidden="true">✳</span>
+        <span>maison solaire</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+        aria-label="Ouvrir le menu"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+        <a href="#boutique">La boutique</a>
+        <a href="#histoire">Notre histoire</a>
+        <a href="#engagements">Nos engagements</a>
+      </nav>
+      <button class="cart-trigger" type="button" aria-label="Ouvrir le panier">
+        <span class="cart-label">Panier</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> LES BEAUX JOURS S'INSTALLENT</p>
+          <h1>La maison,<br>en <em>mieux.</em></h1>
+          <p class="hero-intro">
+            Des matières naturelles, des lignes simples et des objets faits pour durer.
+            Bienvenue chez vous.
+          </p>
+          <a class="button button-dark" href="#boutique">Découvrir la collection <span aria-hidden="true">↘</span></a>
+          <div class="hero-note"><span aria-hidden="true">✳</span> Des pièces choisies, jamais produites à la chaîne.</div>
+        </div>
+        <div class="hero-image" role="img" aria-label="Intérieur lumineux aux matières naturelles">
+          <div class="hero-sticker"><span>vivre</span><span>plus</span><em>simple</em></div>
+          <span class="image-caption">LA BEAUTÉ DES CHOSES SIMPLES — N° 04</span>
+        </div>
+      </section>
+
+      <section class="benefits" id="engagements" aria-label="Nos engagements">
+        <div><span class="benefit-icon" aria-hidden="true">✳</span><p><strong>Bien fabriqué</strong><br>Des matières choisies avec soin</p></div>
+        <div><span class="benefit-icon" aria-hidden="true">↗</span><p><strong>Livraison offerte</strong><br>Dès 80 € d'achat en France</p></div>
+        <div><span class="benefit-icon" aria-hidden="true">♡</span><p><strong>Du temps pour choisir</strong><br>Retours sous 30 jours</p></div>
+      </section>
+
+      <section class="shop section-wrap" id="boutique">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LA SÉLECTION MAISON SOLAIRE</p>
+            <h2>Les petits bonheurs<br><em>du quotidien.</em></h2>
+          </div>
+          <p class="section-description">De jolies choses à garder longtemps.<br>À vous de trouver les vôtres.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filters" role="group" aria-label="Filtrer les produits">
+            <button class="filter-button is-active" type="button" data-filter="Tout" aria-pressed="true">Tout voir</button>
+            <button class="filter-button" type="button" data-filter="Art de la table" aria-pressed="false">Art de la table</button>
+            <button class="filter-button" type="button" data-filter="Déco" aria-pressed="false">Déco</button>
+            <button class="filter-button" type="button" data-filter="Textile" aria-pressed="false">Textile</button>
+          </div>
+          <span class="product-total" aria-live="polite"></span>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="story section-wrap" id="histoire">
+        <div class="story-image" role="img" aria-label="Détail d'un intérieur chaleureux et naturel"></div>
+        <div class="story-copy">
+          <p class="eyebrow">MOINS, MAIS MIEUX</p>
+          <h2>Une maison qui<br>vous <em>ressemble.</em></h2>
+          <p>
+            Maison Solaire, c'est une sélection indépendante d'objets du quotidien.
+            On privilégie les belles matières, les ateliers à taille humaine et les
+            pièces qu'on aura encore plaisir à retrouver dans dix ans.
+          </p>
+          <a class="text-link" href="#engagements">Ce qui nous guide <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="closing section-wrap">
+        <span class="closing-flower" aria-hidden="true">✳</span>
+        <p class="eyebrow">VOTRE INTÉRIEUR, VOTRE HISTOIRE</p>
+        <h2>Faites place<br><em>aux belles choses.</em></h2>
+        <a class="button button-light" href="#boutique">Voir toute la sélection <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand" href="#accueil"><span class="brand-symbol" aria-hidden="true">✳</span><span>maison solaire</span></a>
+      <p>De belles choses, pour longtemps. <span id="year"></span></p>
+      <a href="#accueil">Retour en haut ↑</a>
+    </footer>
+
+    <div class="overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-header">
+        <h2 id="cart-title">Votre panier <span class="drawer-count">(0)</span></h2>
+        <button class="drawer-close" type="button" aria-label="Fermer le panier">×</button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-empty">
+        <span aria-hidden="true">✳</span>
+        <p>Votre panier est encore tout léger.</p>
+        <button class="text-link continue-shopping" type="button">Continuer mes découvertes <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="cart-summary" hidden>
+        <p class="shipping-note"></p>
+        <div class="subtotal"><span>Sous-total</span><strong></strong></div>
+        <p class="checkout-note">Les frais de livraison sont calculés à l'étape suivante.</p>
+        <button class="button button-dark checkout-button" type="button">Passer commande <span aria-hidden="true">↗</span></button>
+      </div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
