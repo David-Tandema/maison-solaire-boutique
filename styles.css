@@ -59,8 +59,23 @@ h1, h2, h3, p { margin-top: 0; }
   border-bottom: 1px solid var(--line);
 }
 
-.brand { display: inline-flex; align-items: center; gap: 9px; font-size: 16px; font-weight: 700; letter-spacing: -.06em; }
-.brand-symbol { color: var(--olive); font-size: 23px; line-height: 1; }
+.brand { display: inline-flex; align-items: center; gap: 11px; }
+.brand-mark {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--olive);
+  border-radius: 50%;
+  color: var(--olive);
+  font-family: var(--serif);
+  font-size: 21px;
+  font-style: italic;
+  line-height: 1;
+}
+.brand-lockup { display: flex; flex-direction: column; gap: 3px; }
+.brand-name { font-size: 15px; font-weight: 700; letter-spacing: .19em; line-height: 1; }
+.brand-caption { color: var(--muted); font-size: 7px; font-weight: 600; letter-spacing: .16em; line-height: 1; }
 .navigation { display: flex; align-items: center; gap: 39px; font-size: 12px; }
 .navigation a, .site-footer a, .text-link { transition: opacity .2s ease; }
 .navigation a:hover, .site-footer a:hover, .text-link:hover { opacity: .58; }
@@ -190,8 +205,9 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -.06
   .announcement { font-size: 9px; }
   .section-wrap, .site-header, .benefits { width: calc(100% - 36px); }
   .site-header { height: 67px; }
-  .brand { font-size: 14px; }
-  .brand-symbol { font-size: 21px; }
+  .brand-mark { width: 33px; height: 33px; font-size: 19px; }
+  .brand-name { font-size: 13px; }
+  .brand-caption { font-size: 6px; }
   .menu-toggle { width: 34px; height: 34px; order: 3; display: flex; flex-direction: column; justify-content: center; gap: 5px; border: 0; background: none; cursor: pointer; }
   .menu-toggle span { width: 19px; height: 1px; background: var(--ink); }
   .cart-trigger { margin-left: auto; margin-right: 11px; }
